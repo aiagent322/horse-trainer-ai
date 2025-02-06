@@ -10,6 +10,15 @@
 - Looking to Collaborate On AI agent projects for specialized industries (horse training, agriculture, property management).
 - Custom AI integrations for workflow automation and data-driven decision-making.
 - AI-based community tools and virtual assistant applications.
+- **Projects I'm Working On**
+- **The Horse Directory:** A comprehensive directory service for equine professionals, with AI-powered agents that streamline data management.
+- **Ranchhand Robots:** Developing robotic solutions tailored to agriculture, ranch operations, and firefighting.
+- **Meta VR Games:** Expanding my portfolio of VR applications, powered by interactive AI characters and experiences.
+**Technologies and Tools I Use**
+- **Languages:** Python, JavaScript, Markdown, SQL
+- **Frameworks:** PyTorch, TensorFlow, Hugging Face Transformers, LangChain
+- **Platforms:** Crew AI Studio, OpenAI API, eDirectory, AWS, Google Cloud, Azure
+- **DevOps:** GitHub Actions, Docker, API Automation
 - 📫 How to reach me rexwager@aol.com
 <!---
 aiagent322/aiagent322 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
