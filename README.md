@@ -5,14 +5,13 @@
 - Improving AI deployment pipelines using GitHub Actions and API-driven automation.
 - Scaling AI solutions on cloud infrastructure (AWS, Azure, GCP).
 - Developing AI agents to automate complex tasks.
-- Enhancing conversational AI experiences for industries such as horse training, property management, and firefighting.
+- Enhancing conversational AI experiences for industries such as horse training.
 - Exploring new frameworks for LLM (large language model) integration.
 - Looking to Collaborate On AI agent projects for specialized industries (horse training, agriculture, property management).
 - Custom AI integrations for workflow automation and data-driven decision-making.
 - AI-based community tools and virtual assistant applications.
 - **Projects I'm Working On**
 - **The Horse Directory:** A comprehensive directory service for equine professionals, with AI-powered agents that streamline data management.
-- **Ranchhand Robots:** Developing robotic solutions tailored to agriculture, ranch operations, and firefighting.
 - **Meta VR Games:** Expanding my portfolio of VR applications, powered by interactive AI characters and experiences.
 **Technologies and Tools I Use**
 - **Languages:** Python, JavaScript, Markdown, SQL
