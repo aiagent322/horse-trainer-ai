@@ -1,0 +1,23 @@
+# OpenAI settings
+OPENAI_API_KEY="sk-**********"
+OPENAI_API_BASE="https://api.openai.com/v1"
+# Anthropic settings
+ANTHROPIC_API_KEY="anthropic-**********"
+# AgentOps settings
+AGENTOPS_API_KEY="agentops-**********"
+#!/bin/bash
+set -e  # Exit immediately on any error
+set -u  # Treat unset variables as an error
+# Check required environment variables
+REQUIRED_VARS=("OPENAI_API_KEY" "DB_URL" "AGENTOPS_API_KEY")
+for var in "${REQUIRED_VARS[@]}"; do   if [ -z "${!var:-}" ]; then     echo "Error: $var is not set"scripts": {
+    exit 1
+  fi
+done
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Run the application
+python main.py
+for var in "${REQUIRED_VARS[@]}"; do   if [ -z "${!var:-}" ]; then     echo "Error: $var is not set"scripts": {;     exit 1;   fi; done

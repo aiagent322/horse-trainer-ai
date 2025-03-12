@@ -1,0 +1,9 @@
+[core]
+account = bridleandbit@gmail.com
+project = farrier
+disable_usage_reporting = False
+
+[compute]
+zone = us-west1-b
+region = us-west1
+

@@ -1,0 +1,521 @@
+ls
+ls -l .env
+cd my_new_project
+nano .env
+ls
+nano .env
+MODEL=gpt-3.5-turbo
+OPENAI_API_KEY=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
+s -l .env
+ls -l .env
+cat .env
+export $(cat .env | xargs)
+echo $MODEL
+echo $OPENAI_API_KEY
+crewai run
+crewai run
+set OPENAI_API_KEY=your_openai_api_key
+export OPENAI_API_KEY=your_openai_api_key
+export OPENAI_API_KEY=your_openai_api_key
+environment:
+  - OPENAI_API_KEY=your_openai_api_key
+version: '3.8'
+services:
+  crew-studio:
+    image: your-crew-studio-image
+    container_name: crew-studio
+    environment:
+      - OPENAI_API_KEY=your_openai_api_key
+    ports:
+      - "8080:8080"
+docker-compose up -d
+curl -X POST https://api.gemini.ai/v1/completions -H "Authorization: Bearer YOUR_STALLION_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+pip install -q -U google-generativeai
+pip install -q -U google-generativeai
+~/.bashrc
+touch ~/.bashrc
+open ~/.bashrctouch ~/.bashrc
+open ~/.bashrcsudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+sudo nano ~/.zshrc
+export GEMINI_API_KEY=your_stallion_api_key
+export GEMINI_API_ENDPOINT=https://api.gemini.ai/v1
+curl -X POST $GEMINI_API_ENDPOINT/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+https://us-central1-aiplatform.googleapis.com/v1/projects/<your-project-id>/locations/<region>/models/<model-id>:predict
+ping api.gemini.ai
+sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
+curl -X POST <correct_endpoint>/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+ping api.gemini.ai
+https://us-central1-aiplatform.googleapis.com/v1/projects/<your-project-id>/locations/us-central1/models/<model-id>:predict
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/<your-project-id>/locations/us-central1/models/<model-id>:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+AIzaSyAI__zjycYa8JGK6MSS_fzGbLRJm-CtWFg
+export GEMINI_API_KEY=your_stallion_api_key
+curl -X POST <correct_endpoint>/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+https://api.gemini.ai/v1
+curl -X POST https://api.gemini.ai/v1/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+echo $GEMINI_API_KEY
+curl -X POST https://api.gemini.ai/v1/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+~/.bashrcls -a ~ | grep .bash
+echo $SHELL
+touch ~/.bash_profile
+export GEMINI_API_KEY=your_actual_stallion_api_key
+curl -X POST https://api.gemini.ai/v1/completions -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'export GEMINI_API_KEY= AIzaSyAI__zjycYa8JGK6MSS_fzGbLRJm-CtWFg
+curl -X POST https://us-west4-aiplatform.googleapis.com/v1/projects/<project-id>/locations/us-west4/models/<model-id>:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+https://us-central1-aiplatform.googleapis.com/v1/projects/< stallions-444121>/locations/< us-west4>/models/< gemini-1.5-pro>:predictcurl -X POST https://us-west4-aiplatform.googleapis.com/v1/projects/<project-id>/locations/us-west4/models/<model-id>:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predictcurl -X POST https://us-west4-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+{   "choices": [;     {       "text": "Hello! How can I help you?",;       "index": 0;     };   ]; }
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}' > response.json
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}' > response.json
+brew install jq
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install jq
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}' | jq
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}' | jq
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+curl -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}' > response.json
+cat response.json
+echo $GEMINI_API_KEY
+curl -v -X POST https://us-central1-aiplatform.googleapis.com/v1/projects/stallions-444121/locations/us-west4/models/gemini-1.5-pro:predict -H "Authorization: Bearer $GEMINI_API_KEY" -H "Content-Type: application/json" -d '{"prompt": "Hello, Gemini!", "max_tokens": 50}'
+gcloud auth login
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+cloud auth login
+brew install --cask google-cloud-sdk
+gcloud init
+Do you want to configure a default Compute Region and Zone? (Y/n)? Y
+gcloud init
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+npm init -y
+npm install express body-parser axios
+npm -v
+node -v
+npm -v
+npm install express body-parser axios
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  // Query your data source here (CSV or Google Sheets) based on the user query
+  // Example response (you can modify this based on your data query)
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`,
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+touch index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  // Query your data source here (CSV or Google Sheets) based on the user query
+  // Example response (you can modify this based on your data query)
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`,
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  // Query your data source here (CSV or Google Sheets) based on the user query
+  // Example response (you can modify this based on your data query)
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`,
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Middleware to parse incoming JSON
+app.use(bodyParser.json());
+// Webhook route
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText; // User query from Dialogflow
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);  // Send the response back to Dialogflow
+});
+// Set port and start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+node index.js
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+touch index.js
+nano index.js
+node index.js
+cd dialogflow-webhook
+ls
+nano index.js
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+cd dialogflow-webhook
+pwd
+ls
+ls
+cd dialogflow-webhook
+pwd
+npm init -y
+npm install express body-parser
+nano index.js
+vim index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+lsof -i :5000
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+node index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+vim index.js
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+npm init -y
+npm install express body-parser
+touch index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Middleware to parse incoming JSON requests
+app.use(bodyParser.json());
+// Define the webhook endpoint
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  let responseText = "";
+  // Handle different queries
+  if (query.includes('dressage')) {
+    responseText = 'Here’s a great video on dressage: [Dressage Video URL]';
+  } else if (query.includes('reining')) {
+    responseText = 'Check out these reining trainers: [Trainer List URL]';
+  } else {
+    responseText = 'I’m not sure about that topic, but I can help with horse training!';
+  }
+  // Send the response back to Dialogflow
+  const response = {
+    fulfillmentText: responseText
+  };
+  res.json(response);
+});
+// Set up the server to listen on a specified port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+node index.js
+Webhook server running on port 5000
+curl -X POST http://localhost:5000/webhook -H "Content-Type: application/json" -d '{"queryResult": {"queryText": "Tell me about reining."}}'
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Middleware to parse incoming JSON requests
+app.use(bodyParser.json());
+// Define the webhook endpoint
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  let responseText = "";
+  // Handle different queries
+  if (query.includes('dressage')) {
+    responseText = 'Here’s a great video on dressage: [Dressage Video URL]';
+  } else if (query.includes('reining')) {
+    responseText = 'Check out these reining trainers: [Trainer List URL]';
+  } else {
+    responseText = 'I’m not sure about that topic, but I can help with horse training!';
+  }
+  // Send the response back to Dialogflow
+  const response = {
+    fulfillmentText: responseText
+  };
+  res.json(response);
+});
+// Set up the server to listen on a specified port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+:wq
+vim index.js
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+nano index.js
+node index.js
+nano index.js
+node index.js
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+node index.js
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+npm init -y
+nano index.js
+npm install express body-parser
+node index.js
+npm init -ynano index.js
+/exit
+exit
+nano index.js
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+npm init -y
+npm install express body-parser
+node index.js
+node index.js
+node index.js
+exit
+node index.js
+index.js
+exit
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+npm install express body-parser
+node index.js
+node index.js
+exit
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+exit
+nano index.js
+node index.js
+exit
+cd /path/to/your/project/directory
+ls
+cd dialogflow-webhook-new
+ls
+nano index.js
+cd /path/to/your/project/directory
+ls
+cd dialogflow-webhook-new
+ls
+nano index.js
+node index.js
+node index.js
+cd dialogflow-webhook-new
+exit
+cd /path/to/your/project/directory
+nano index.js
+node index.js
+exit
+npm install express body-parser
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+pwd
+npm install express body-parser
+nano index.js
+exit
+cd ~
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+npm init -y
+npm install express body-parser
+nano index.js
+node index.js
+gcloud components update
+python --version
+python --version
+python3 --version
+python3 -m ensurepip --upgrade
+python3 your_script_name.py
+ls
+exit
+nano disable_memory.py
+ls
+python3 disable_memory.py
+prompt = "Explain the basics of horse training." response = llm.run(prompt) print(response)nano disable_memory.py
+nano disable_memory.py
+from crewai import LLM
+python3
+nano disable_memory.py
+python3 disable_memory.py
+nano disable_memory.py
+nano disable_memory.py
+python3 disable_memory.py
+response = llm.generate(prompt)
+response = llm.generate(prompt)
+python3
+python3
+python3
+python3
+curl -X GET https://generativelanguage.googleapis.com/v1beta2/models -H "Authorization: Bearer YOUR_API_KEY"
+npm start
+"scripts": {
+  "start": "node server.js"
+}
+nano package.json
+npm install
+nano package.json
+nano server.js
+nano server.js
+npm start
+const express = require('express');
+const app = express();
+// Define the port
+const port = process.env.PORT || 5000;  // Use port 5000 if no environment variable is set
+// Simple route to test
+app.get('/', (req, res) => {
+  res.send('Hello, HorseTrainer!');
+});
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+nano server.js
+y
+nano server.js
+node server.js
+node server.js
+nano server.js
+npm start
+nano server.js
+app.get('/about', (req, res) => {
+  res.send('This is a page about Horse Trainer!');
+});
+nano server.js
+npm install crewai-sdk
+nano server.js
+npm start
+nano server.js
+npm start
+nano server.js
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-file.json"
+npm install @google-cloud/aiplatform
+const {PredictionServiceClient} = require('@google-cloud/aiplatform');
+const client = new PredictionServiceClient();
+async function predict() {
+  const projectId = 'your-google-cloud-project-id';
+  const endpointId = 'your-endpoint-id';
+  const location = 'us-central1'; // Choose your location
+  const endpoint = `projects/${projectId}/locations/${location}/endpoints/${endpointId}`;
+  
+  const instances = [
+    {input: 'your input text'} // Replace with your actual input
+  ];
+  const [response] = await client.predict({
+    endpoint,
+    instances,
+  });
+  console.log('Prediction result:', response.predictions);
+}
+predict();
+nano server.js
+node vertex-ai-predict.js
+cd ~/Documents/my-project-directory
+cd ~/Documents/my-project-directory
+cd ~/Documents/my-project-directory
+pwd
+ls
+cd ~/Documents/my-project-directory
+mkdir ~/Documents/my-project-directory
+nano vertex-ai-predict.js
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-file.json"
+npm install @google-cloud/aiplatform
+nano
+node vertex-ai-predict.js
+nano
+node vertex-ai-predict.js
+nano
+cd path/to/your/project
+path/to/your/project
+cd path/to/your/project
+python -m venv venv
+source venv/bin/activate venv/Lib/site-packages
+git clone https://github.com/strnad/CrewAI-Studio.git
+cd CrewAI-Studio./install_venv.sh
+./run_venv.sh
+Run the installation script:
+./install_venv.sh
+pwd
+pwd
+pwd
+pwd
+ls -la
+chmod +x install_venv.sh
+cd ~/path/to/CrewAI-Studio-directory
+python3 -m venv venv
+source venv/bin/activate
+cd /path/to/your/project/directory
+git clone <repository-url>
+cd path/to/downloaded/project
+git clone https://github.com/your-organization/crewai-studio.git
+cd crewai-studio
+ls -la
+pip install -r requirements.txt
+chmod +x install_venv.sh
+./install_venv.sh
+nano .env

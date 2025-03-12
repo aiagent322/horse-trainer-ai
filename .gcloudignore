@@ -1,0 +1,12 @@
+.git
+.venv
+.cache
+.rustup
+.cargo
+CrewAI-Studio
+__pycache__
+*.log
+*.db
+*.png
+*.jpg
+*.jpeg

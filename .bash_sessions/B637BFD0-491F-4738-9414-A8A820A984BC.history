@@ -1,0 +1,512 @@
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+touch index.js
+nano index.js
+node index.js
+cd dialogflow-webhook
+ls
+nano index.js
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+cd dialogflow-webhook
+pwd
+ls
+ls
+cd dialogflow-webhook
+pwd
+npm init -y
+npm install express body-parser
+nano index.js
+vim index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+lsof -i :5000
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+node index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  const response = {
+    fulfillmentText: `You asked about: ${query}. Here’s the video link! [Video URL]`
+  };
+  res.json(response);
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+vim index.js
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+npm init -y
+npm install express body-parser
+touch index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Middleware to parse incoming JSON requests
+app.use(bodyParser.json());
+// Define the webhook endpoint
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  let responseText = "";
+  // Handle different queries
+  if (query.includes('dressage')) {
+    responseText = 'Here’s a great video on dressage: [Dressage Video URL]';
+  } else if (query.includes('reining')) {
+    responseText = 'Check out these reining trainers: [Trainer List URL]';
+  } else {
+    responseText = 'I’m not sure about that topic, but I can help with horse training!';
+  }
+  // Send the response back to Dialogflow
+  const response = {
+    fulfillmentText: responseText
+  };
+  res.json(response);
+});
+// Set up the server to listen on a specified port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+node index.js
+Webhook server running on port 5000
+curl -X POST http://localhost:5000/webhook -H "Content-Type: application/json" -d '{"queryResult": {"queryText": "Tell me about reining."}}'
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Middleware to parse incoming JSON requests
+app.use(bodyParser.json());
+// Define the webhook endpoint
+app.post('/webhook', (req, res) => {
+  const query = req.body.queryResult.queryText;
+  let responseText = "";
+  // Handle different queries
+  if (query.includes('dressage')) {
+    responseText = 'Here’s a great video on dressage: [Dressage Video URL]';
+  } else if (query.includes('reining')) {
+    responseText = 'Check out these reining trainers: [Trainer List URL]';
+  } else {
+    responseText = 'I’m not sure about that topic, but I can help with horse training!';
+  }
+  // Send the response back to Dialogflow
+  const response = {
+    fulfillmentText: responseText
+  };
+  res.json(response);
+});
+// Set up the server to listen on a specified port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Webhook server running on port ${PORT}`);
+});
+:wq
+vim index.js
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+nano index.js
+node index.js
+nano index.js
+node index.js
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+node index.js
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+mkdir dialogflow-webhook-new
+cd dialogflow-webhook-new
+npm init -y
+nano index.js
+npm install express body-parser
+node index.js
+npm init -ynano index.js
+/exit
+exit
+nano index.js
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+npm init -y
+npm install express body-parser
+node index.js
+node index.js
+node index.js
+exit
+node index.js
+index.js
+exit
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+npm install express body-parser
+node index.js
+node index.js
+exit
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+nano index.js
+node index.js
+exit
+nano index.js
+node index.js
+exit
+cd /path/to/your/project/directory
+ls
+cd dialogflow-webhook-new
+ls
+nano index.js
+cd /path/to/your/project/directory
+ls
+cd dialogflow-webhook-new
+ls
+nano index.js
+node index.js
+node index.js
+cd dialogflow-webhook-new
+exit
+cd /path/to/your/project/directory
+nano index.js
+node index.js
+exit
+npm install express body-parser
+node index.js
+exit
+cd /Users/user/dialogflow-webhook-new
+pwd
+npm install express body-parser
+nano index.js
+exit
+cd ~
+mkdir dialogflow-webhook
+cd dialogflow-webhook
+npm init -y
+npm install express body-parser
+nano index.js
+node index.js
+gcloud components update
+python --version
+python --version
+python3 --version
+python3 -m ensurepip --upgrade
+python3 your_script_name.py
+ls
+exit
+nano disable_memory.py
+ls
+python3 disable_memory.py
+prompt = "Explain the basics of horse training." response = llm.run(prompt) print(response)nano disable_memory.py
+nano disable_memory.py
+from crewai import LLM
+python3
+nano disable_memory.py
+python3 disable_memory.py
+nano disable_memory.py
+nano disable_memory.py
+python3 disable_memory.py
+response = llm.generate(prompt)
+response = llm.generate(prompt)
+python3
+python3
+python3
+python3
+curl -X GET https://generativelanguage.googleapis.com/v1beta2/models -H "Authorization: Bearer YOUR_API_KEY"
+npm start
+"scripts": {
+  "start": "node server.js"
+}
+nano package.json
+npm install
+nano package.json
+nano server.js
+nano server.js
+npm start
+const express = require('express');
+const app = express();
+// Define the port
+const port = process.env.PORT || 5000;  // Use port 5000 if no environment variable is set
+// Simple route to test
+app.get('/', (req, res) => {
+  res.send('Hello, HorseTrainer!');
+});
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+nano server.js
+y
+nano server.js
+node server.js
+node server.js
+nano server.js
+npm start
+nano server.js
+app.get('/about', (req, res) => {
+  res.send('This is a page about Horse Trainer!');
+});
+nano server.js
+npm install crewai-sdk
+nano server.js
+npm start
+nano server.js
+npm start
+nano server.js
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-file.json"
+npm install @google-cloud/aiplatform
+const {PredictionServiceClient} = require('@google-cloud/aiplatform');
+const client = new PredictionServiceClient();
+async function predict() {
+  const projectId = 'your-google-cloud-project-id';
+  const endpointId = 'your-endpoint-id';
+  const location = 'us-central1'; // Choose your location
+  const endpoint = `projects/${projectId}/locations/${location}/endpoints/${endpointId}`;
+  
+  const instances = [
+    {input: 'your input text'} // Replace with your actual input
+  ];
+  const [response] = await client.predict({
+    endpoint,
+    instances,
+  });
+  console.log('Prediction result:', response.predictions);
+}
+predict();
+nano server.js
+node vertex-ai-predict.js
+cd ~/Documents/my-project-directory
+cd ~/Documents/my-project-directory
+cd ~/Documents/my-project-directory
+pwd
+ls
+cd ~/Documents/my-project-directory
+mkdir ~/Documents/my-project-directory
+nano vertex-ai-predict.js
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-file.json"
+npm install @google-cloud/aiplatform
+nano
+node vertex-ai-predict.js
+nano
+node vertex-ai-predict.js
+nano
+cd path/to/your/project
+path/to/your/project
+cd path/to/your/project
+python -m venv venv
+source venv/bin/activate venv/Lib/site-packages
+git clone https://github.com/strnad/CrewAI-Studio.git
+cd CrewAI-Studio./install_venv.sh
+./run_venv.sh
+Run the installation script:
+./install_venv.sh
+pwd
+pwd
+pwd
+pwd
+ls -la
+chmod +x install_venv.sh
+cd ~/path/to/CrewAI-Studio-directory
+python3 -m venv venv
+source venv/bin/activate
+cd /path/to/your/project/directory
+git clone <repository-url>
+cd path/to/downloaded/project
+git clone https://github.com/your-organization/crewai-studio.git
+cd crewai-studio
+ls -la
+pip install -r requirements.txt
+chmod +x install_venv.sh
+./install_venv.sh
+nano .env
+for var in OPENAI_API_KEY DB_URL AGENTOPS_API_KEY; do   if [ -z ]; then     echo Error: DB_URL is not set; for var in OPENAI_API_KEY DB_URL AGENTOPS_API_KEY; do   if [ -z "${!var:-}" ]; then     echo "Error: $var is not set";     exit 1;   fi; done; set +u  # Temporarily disable unbound variable error echo "Optional var: ${HISTTIMEFORMAT:-not set}"; set -u  # Re-enable strict error checking source venv/bin/activate || { echo "Failed to activate virtual environment"; exit 1; };  echo "Starting application..."; python main.py || { echo "Application encountered an error"; exit 1; };  echo "Application completed successfully."; echo "[$(date +'%Y-%m-%d %H:%M:%S')] INFO: Activating virtual environment..."
+unset OPENAI_API_KEY DB_URL AGENTOPS_API_KEY
+./your_script.sh
+find ~ -name "your_script.sh"
+nano your_script.sh
+nano run_app.sh
+chmod +x run_app.sh
+./run_app.sh
+nano run_app.sh
+./run_app.sh
+#!/bin/bash
+bash ./run_app.sh
+echo $OPENAI_API_KEY
+export OPENAI_API_KEY="your_actual_api_key_here"
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"echo $OPENAI_API_KEY
+export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-newly_generated_api_key"
+export OPENAI_API_KEY="sk-newly_generated_api_key"
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-abc123youractualapikeyhere"
+export OPENAI_API_KEY="sk-abc123youractualapikeyhere"export OPENAI_API_KEY=" sk-proj
+RKy1fXQrpcd9cD2Wt2gDCvMNMz6Xdf4oVzSfVHsOqdOSzhMqhg3PIvbEsg_pG_d1vqkWuLy-6fT3BlbkFJyr8LFiSMuAWSI7f3sEMmA5fxrqie6fd_tlld-NlLR6-jUu_m_1RauNlbW5qJTECD6eEN9QCRIA
+export OPENAI_API_KEY="sk-projRKy1fXQrpcd9cD2Wt2gDCvMNMz6Xdf4oVzSfVHsOqdOSzhMqhg3PIvbEsg_pG_d1vqkWuLy-6fT3BlbkFJyr8LFiSMuAWSI7f3sEMmA5fxrqie6fd_tlld-NlLR6-jUu_m_1RauNlbW5qJTECD6eEN9QCRIA"
+
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-correct_key_from_platform"
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+echo $OPENAI_API_KEY
+echo $OPENAI_API_KEY
+echo $OPENAI_API_KEY
+echo $OPENAI_API_KEY
+export OPENAI_API_KEY="sk-RKy1fXQrpcd9cD2Wt2gDCvMNMz6Xdf4oVzSfVHsOqdOSzhMqhg3PIvbEsg_pG_d1vqkWuLy-6fT3BlbkFJyr8LFiSMuAWSI7f3sEMmA5fxrqie6fd_tlld-NlLR6-jUu_m_1RauNlbW5qJTECD6eEN9QCRIA"
+echo $OPENAI_API_KEY
+echo $OPENAI_API_KEY
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+
+curl -v https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+curl -I https://api.openai.com
+curl -v https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+ping api.openai.com
+nslookup api.openai.com
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+nslookup api.openai.com
+export OPENAI_API_KEY="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"
+echo $OPENAI_API_KEY
+export OPENAI_API_KEY="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"
+echo $OPENAI_API_KEY
+export
+export OPENAI_API_KEY="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"; echo $OPENAI_API_KEY
+echo $SHELL
+export OPENAI_API_KEY="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"
+source ~/.bash_profile
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+pip install openai
+import openai
+import os
+# Set your OpenAI API key (assuming it's already exported in your environment)
+openai.api_key = os.getenv("OPENAI_API_KEY")
+# Function to send a chat completion request
+def get_chat_completion(prompt):
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4-turbo",  # You can change this to another model if needed
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=300,   # Limit for the response length
+            temperature=0.7,  # Controls randomness; lower is more deterministic
+        )
+        # Extract and print the assistant's response
+        message = response.choices[0].message['content']
+        print("\nAssistant's Response:\n", message)
+    except Exception as e:
+        print("An error occurred:", e)
+# Example prompt
+user_prompt = "Explain the concept of machine learning in simple terms."
+# Get a response from the API
+get_chat_completion(user_prompt)
+python chat_example.py
+python3 --version
+brew install python
+python3 chat_example.py
+nano
+import openai
+import os
+# Set your OpenAI API key (assuming it's already exported in your environment)
+openai.api_key = os.getenv("OPENAI_API_KEY")
+# Function to send a chat completion request
+def get_chat_completion(prompt):
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4-turbo",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=300,
+            temperature=0.7,
+        )
+        # Extract and print the assistant's response
+        message = response.choices[0].message['content']
+        print("\nAssistant's Response:\n", message)
+    except Exception as e:
+        print("An error occurred:", e)
+# Example prompt
+user_prompt = "Explain the concept of machine learning in simple terms."
+# Get a response from the API
+get_chat_completion(user_prompt)
+cat /etc/shells
+chsh -s /bin/bash
+export OPENAI_API_KEY="sk-your_correct_api_key_here"
+echo $OPENAI_API_KEY
+curl -I https://api.openai.com
+curl -I https://api.openai.com
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-correct_actual_key_here"
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+export OPENAI_API_KEY="sk-your_new_api_key_here"
+export OPENAI_API_KEY="sk-your_new_api_key_here"
+sk-proj-CVHHz5nUaGJaLGL0LuC_9N7unNVwkajMiDV6fG8jau6jzW0J9MbEzYdW4SnX8iWrONpyWnx8T1T3BlbkFJS8FPPRmnv7fUmK0QEtAzmgo7ewiF5dt8RI4R50sknATwKXNxG5X3aStPJp6GROQv_N0xeqKm8Aecho $OPENAI_API_KEY
+chsh -s /bin/bash
+sudo whoami
+echo $SHELL
+export OPENAI_API_KEY="sk-your_new_api_key_here"
+sk-proj-CVHHz5nUaGJaLGL0LuC_9N7unNVwkajMiDV6fG8jau6jzW0J9MbEzYdW4SnX8iWrONpyWnx8T1T3BlbkFJS8FPPRmnv7fUmK0QEtAzmgo7ewiF5dt8RI4R50sknATwKXNxG5X3aStPJp6GROQv_N0xeqKm8Aecho $SHELL
+export OPENAI_API_KEY="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"
+echo $OPENAI_API_KEY
+curl https://api.openai.com/v1/models   -H "Authorization: Bearer $OPENAI_API_KEY"
+nano ~/.bash_profile
+bash
+source ~/.bash_profile
+echo $OPENAI_API_KEY
+nano ~/.bash_profile

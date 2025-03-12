@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<application>
+  <component name="projectList">
+    <projects>
+      <project name="Untitled 2" creationDate="Fri Nov 27 15:04:18 GMT-0700 2020" lastAccessDate="Fri Nov 27 15:04:51 GMT-0700 2020" uid="03E41F19-0BB8-F42F-4170-EE71E8D80C8A" filePath="${APPSTORAGE}/03E41F19-0BB8-F42F-4170-EE71E8D80C8A/project.vtp" folder="${APPSTORAGE}/03E41F19-0BB8-F42F-4170-EE71E8D80C8A" data=""/>
+      <project name="Peoria Ford Commercial" creationDate="Fri Nov 27 15:14:26 GMT-0700 2020" lastAccessDate="Fri Nov 27 16:34:51 GMT-0700 2020" uid="07E67350-0BCF-6C3D-4179-9E06DE14BD04" filePath="${APPSTORAGE}/07E67350-0BCF-6C3D-4179-9E06DE14BD04/project.vtp" folder="${APPSTORAGE}/07E67350-0BCF-6C3D-4179-9E06DE14BD04" data=""/>
+    </projects>
+  </component>
+</application>
