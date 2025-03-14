@@ -1,40 +1,67 @@
 import openai
 import os
-from dotenv import load_dotenv
+import logging
+from fastapi import FastAPI, HTTPException
 
-# Load API key from .env file
-load_dotenv()
+# Configure Logging
+logging.basicConfig(
+    filename="app.log",  # Log file name
+    level=logging.INFO,   # Logging level (INFO, DEBUG, ERROR, etc.)
+    format="%(asctime)s - %(levelname)s - %(message)s"  # Log format
+)
+
+# Load API key from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+# Log API Key Check
+if OPENAI_API_KEY:
+    logging.info("✅ OPENAI API Key is set.")
+else:
+    logging.error("❌ ERROR: OPENAI_API_KEY is missing!")
+    raise ValueError("ERROR: OPENAI API Key is not set in environment 
+variables.")
+
+# Initialize OpenAI with the key
 openai.api_key = OPENAI_API_KEY
 
-def horse_trainer_agent(user_input):
-    """
-    AI-powered horse trainer that provides advice to students.
-    """
-    system_message = """ 
-    You are an experienced horse trainer specializing in reining, 
-dressage, and horsemanship. 
-    Provide clear and actionable training advice for riders of all levels. 
-    Ensure responses are practical, safe, and easy to understand.
-    """
+# Initialize FastAPI app
+app = FastAPI()
 
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": system_message},
-            {"role": "user", "content": user_input},
-        ]
-    )
-    
-    return response["choices"][0]["message"]["content"]
+@app.get("/")
+def home():
+    logging.info("🏠 Home endpoint accessed.")
+    return {"message": "Welcome to Horse Trainer AI"}
 
-if __name__ == "__main__":
-    print("Welcome to Horse Trainer AI! Ask for horse training advice.")
-    while True:
-        user_query = input("You: ")
-        if user_query.lower() in ["exit", "quit", "stop"]:
-            print("Goodbye!")
-            break
-        response = horse_trainer_agent(user_query)
-        print("Horse Trainer AI:", response)
+@app.get("/debug")
+def debug_api_key():
+    """Returns the status of the OpenAI API key"""
+    key_status = "SET" if OPENAI_API_KEY else "MISSING"
+    logging.info(f"🔍 Debug API Key Check: {key_status}")
+    return {"API_KEY_STATUS": key_status}
+
+@app.get("/ask")
+def horse_trainer_agent(question: str):
+    """Handles questions related to horse training"""
+    logging.info(f"📢 Received question: {question}")
+
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": """You are an experienced 
+horse trainer specializing in reining.
+                Provide step-by-step guidance on reining techniques, 
+stopping drills, and improving horse control."""},
+                {"role": "user", "content": question}
+            ]
+        )
+        answer = response["choices"][0]["message"]["content"]
+        logging.info(f"✅ Generated Response: {answer[:50]}...")  # Log 
+first 50 characters
+        return {"response": answer}
+
+    except Exception as e:
+        logging.error(f"❌ ERROR: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error processing 
+request.")
+
