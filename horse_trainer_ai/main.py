@@ -1,25 +1,20 @@
 import os
 from fastapi import FastAPI
 
-# Load environment variables safely
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-    print("✅ .env file loaded successfully")
-except ModuleNotFoundError:
-    print("⚠️ Warning: python-dotenv module not found. Skipping 
-environment loading")
-
-# Initialize FastAPI app
+# ✅ Initialize FastAPI
 app = FastAPI()
 
 @app.get("/")
 def home():
     return {"message": "Horse Trainer AI is live!"}
 
-# New API query route for testing
+# ✅ Add the missing `/query` endpoint
 @app.get("/query")
 def get_response(query: str):
-    return {"response": f"You asked: {query}. Here’s the best training 
+    return {"response": f"You asked: {query}. Here's the best training 
 advice!"}
+
+# ✅ Debugging: Print Working Directory (One-Line Fix)
+print(f"✅ Current Directory: {os.getcwd()}, 📂 Files: 
+{os.listdir(os.getcwd())}")
 
