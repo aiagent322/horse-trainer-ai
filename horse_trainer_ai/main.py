@@ -2,7 +2,8 @@ import os
 from fastapi import FastAPI
 
 # Debugging: Print working directory and files to verify correct deployment
-print(f"✅ Current Directory: {os.getcwd()} | 📂 Files: {os.listdir(os.getcwd())}")
+print("✅ Current Working Directory:", os.getcwd())
+print("📂 Files in directory:", os.listdir(os.getcwd()))
 
 # Load environment variables safely
 try:
@@ -19,8 +20,8 @@ app = FastAPI()
 def home():
     return {"message": "Horse Trainer AI is live!"}
 
-# Fix `/query` API route
+# ✅ Correctly defined /query route
 @app.get("/query")
 def get_response(query: str):
-    return {"response": f"You asked: {query}. Here's the best training advice!"}
+    return {"response": f"You asked: {query}. Here’s the best training advice!"}
 
