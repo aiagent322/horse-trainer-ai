@@ -1,10 +1,13 @@
-
 import openai, os, logging
 from fastapi import FastAPI, HTTPException
 
 # Configure Logging
 logging.basicConfig(filename="app.log", level=logging.INFO, 
 format="%(asctime)s - %(levelname)s - %(message)s")
+
+# Load Environment Variables
+PORT = int(os.getenv("APP_PORT", 10000))  # Default to 10000
+HOST = os.getenv("HOST", "0.0.0.0")
 
 # Load API key from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -37,8 +40,7 @@ def horse_trainer_agent(question: str):
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "You are an experienced 
-horse trainer."},
+                {"role": "system", "content": "You are a horse trainer."},
                 {"role": "user", "content": question}
             ]
         )
