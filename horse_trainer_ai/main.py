@@ -1,9 +1,14 @@
 import os
 from fastapi import FastAPI
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Load environment variables safely
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    print("✅ .env file loaded successfully")
+except ModuleNotFoundError:
+    print("⚠️ Warning: python-dotenv module not found. Skipping 
+environment loading")
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -17,7 +22,4 @@ def home():
 def get_response(query: str):
     return {"response": f"You asked: {query}. Here’s the best training 
 advice!"}
-
-# Debugging: Print confirmation that the app is running
-print("✅ FastAPI application has started successfully.")
 
