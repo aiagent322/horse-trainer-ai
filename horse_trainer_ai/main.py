@@ -1,6 +1,5 @@
 import os
 from fastapi import FastAPI
-from dotenv import load_dotenv
 
 # Debugging: Print working directory and files to verify correct 
 deployment
@@ -9,6 +8,7 @@ print("📂 Files in directory:", os.listdir(os.getcwd()))
 
 # Load environment variables safely
 try:
+    from dotenv import load_dotenv
     load_dotenv()
     print("✅ .env file loaded successfully")
 except ModuleNotFoundError:
@@ -18,18 +18,17 @@ environment loading")
 # Initialize FastAPI app
 app = FastAPI()
 
-# Root Endpoint
 @app.get("/")
 def home():
     return {"message": "Horse Trainer AI is live!"}
 
-# Test API Query Route
+# New API query route for testing
 @app.get("/query")
 def get_response(query: str):
-    return {"response": f"You asked: '{query}'. Here’s the best training 
+    return {"response": f"You asked: {query}. Here’s the best training 
 advice!"}
 
-# Ensure the app runs with Uvicorn
+# Ensure the app runs on Render’s expected port
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 10000)))
