@@ -1,13 +1,8 @@
-import os
 from fastapi import FastAPI
-
-# Debugging: Print working directory and files
-print(f"✅ Current Working Directory: {os.getcwd()}, 📂 Files: 
-{os.listdir(os.getcwd())}")
+from dotenv import load_dotenv
 
 # Load environment variables safely
 try:
-    from dotenv import load_dotenv
     load_dotenv()
     print("✅ .env file loaded successfully")
 except ModuleNotFoundError:
@@ -21,7 +16,7 @@ app = FastAPI()
 def home():
     return {"message": "Horse Trainer AI is live!"}
 
-# New API query route for testing
+# ✅ ADD THIS: API query route for testing
 @app.get("/query")
 def get_response(query: str):
     return {"response": f"You asked: {query}. Here’s the best training 
