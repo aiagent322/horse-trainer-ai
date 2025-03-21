@@ -1,0 +1,37 @@
+{
+  "model": {
+    "type": "random_forest",
+    "params": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "random_state": 42
+    }
+  },
+  "training": {
+    "test_size": 0.2,
+    "validation_method": "cross_val",
+    "n_splits": 5
+  },
+  "features": {
+    "include_weather": true,
+    "include_diet": true,
+    "include_medical": true,
+    "include_lineage": true
+  },
+  "recommendations": {
+    "max_per_horse": 5,
+    "min_confidence": 0.1
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "debug": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/horse_trainer.log"
+  },
+  "output_dir": "output",
+  "train_model": true,
+  "generate_recommendations": true
+}
